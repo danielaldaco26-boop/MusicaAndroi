@@ -1,0 +1,38 @@
+{
+  "app": "🔥Musica🔥",
+  "package": "com.musica.player",
+  "source_file": "ai_studio_code (4).kt",
+  "database": "musica.db",
+  "tables": {
+    "songs": [
+      "id",
+      "title",
+      "artist",
+      "uri",
+      "duration_ms",
+      "album_id",
+      "date_added",
+      "last_seen_at"
+    ],
+    "playlists": [
+      "id",
+      "name",
+      "created_at",
+      "updated_at"
+    ],
+    "playlist_songs": [
+      "playlist_id",
+      "song_id",
+      "position"
+    ],
+    "settings": [
+      "key",
+      "value"
+    ]
+  },
+  "notes": [
+    "La base de datos se entrega vacía de canciones porque estas se leen del MediaStore del dispositivo.",
+    "El código Kotlin actual guarda las listas en SharedPreferences, no en esta base SQLite.",
+    "Se requiere integrar SQLite/Room para usar la base dentro de la app."
+  ]
+}
